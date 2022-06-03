@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        .container {
+            max-width: 250px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .items {
+            background-color: aquamarine;
+            margin: 5px;
+            color: black;
+            text-align: center;
+            flex: 1;
+            display: flex;
+            min-height: 45px;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .strectch {
+            align-items: stretch;
+        }
+
+        .start {
+            align-items: flex-start;
+        }
+
+        .end {
+            align-items: flex-end;
+        }
+
+        .base {
+            align-items: baseline;
+
+        }
+
+        .col {
+            flex-direction: column;
+        }
+
+        .central {
+            height: 300px;
+            justify-content: center;
+
+        }
+
+        .central .items {
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Row</h1>
+    <p>Center</p>
+    <section class="container center">
+        <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dicta nisi ullam tempore
+            sit.</div>
+        <div class="items">Lorem ipsum</div>
+    </section>
+    <p>Strectch</p>
+    <section class="container center strectch">
+        <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dicta nisi ullam tempore
+            sit.</div>
+        <div class="items">Lorem ipsum</div>
+    </section>
+
+    <p>Flex start</p>
+    <section class="container start">
+        <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dicta nisi ullam tempore
+            sit.</div>
+        <div class="items">Lorem ipsum</div>
+    </section>
+
+    <p>Flex end</p>
+    <section class="container end">
+        <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dicta nisi ullam tempore
+            sit.</div>
+        <div class="items">Lorem ipsum</div>
+    </section>
+
+
+    <p>Baseline</p>
+    <section class="container base">
+        <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="items">lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dicta nisi ullam tempore
+            sit.</div>
+        <div class="items">Lorem ipsum</div>
+    </section>
+    <br>
+    <h1>Column</h1>
+    <p>Flex start</p>
+    <section class="container start col">
+        <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dicta nisi ullam tempore
+            sit.</div>
+        <div class="items">Lorem ipsum</div>
+    </section>
+
+    <p>Flex end</p>
+    <section class="container end col">
+        <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dicta nisi ullam tempore
+            sit.</div>
+        <div class="items">Lorem ipsum</div>
+    </section>
+    <p>Center</p>
+    <section class="container center col">
+        <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dicta nisi ullam tempore
+            sit.</div>
+        <div class="items">Lorem ipsum</div>
+    </section>
+    <p>Baseline</p>
+    <section class="container base col">
+        <div class="items">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <div class="items">lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dicta nisi ullam tempore
+            sit.</div>
+        <div class="items">Lorem ipsum</div>
+    </section>
+
+    <p>Alinhamento central</p>
+    <section class="container central center">
+        <div class="items">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo laudantium odit.
+        </div>
+    </section>
+</body>
+
+</html>

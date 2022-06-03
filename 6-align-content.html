@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamento - align content</title>
+    <style>
+        .container {
+            min-height: 600px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            background-color: aliceblue;
+        }
+
+        .item {
+            background-color: rgb(223, 81, 81);
+            padding: 0 5px;
+            margin: 5PX;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <P>Strectch</P>
+    <div class="container strectch">
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+            labore eveniet beatae voluptatibus eius debitis in nihil</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+            labore eveniet beatae voluptatibus eius debitis in nihil</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Laboriosam voluptatum quia iste dolorum sequi </div>
+    </div>
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+        </div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+            labore eveniet beatae voluptatibus eius debitis in nihil</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Laboriosam voluptatum quia iste dolorum sequi </div>
+    </div>
+
+    <p>Flex start</p>
+    <div class="container flex-start">
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+        </div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+            labore eveniet beatae voluptatibus eius debitis in nihil</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Laboriosam voluptatum quia iste dolorum sequi </div>
+    </div>
+    <p>Flex end</p>
+    <div class="container flex-end">
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+        </div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+            labore eveniet beatae voluptatibus eius debitis in nihil</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Laboriosam voluptatum quia iste dolorum sequi </div>
+    </div>
+
+    <p>Space around</p>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+        </div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+            labore eveniet beatae voluptatibus eius debitis in nihil</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Laboriosam voluptatum quia iste dolorum sequi </div>
+    </div>
+
+    <p>Space between</p>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+        </div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. accusamus?</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste dolorum sequi ex doloribus velit incidunt vitae
+            labore eveniet beatae voluptatibus eius debitis in nihil</div>
+        <div class="item">Eos, facilis, laboriosam voluptatum quia iste</div>
+        <div class="item">Laboriosam voluptatum quia iste dolorum sequi </div>
+    </div>
+</body>
+
+</html>
